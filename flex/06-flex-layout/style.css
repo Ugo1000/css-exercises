@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
+  padding: 20px;
   height: 100vh;
   margin: 0;
   overflow: hidden;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -16,12 +17,68 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 10px;
+  margin: 10px;
 }
 
 input {
   border: 1px solid #ddd;
   border-radius: 16px;
   padding: 8px 24px;
-  width: 400px;
-  margin-bottom: 16px;
+  width: 100%; /* Adjusted input width to be responsive */
+  margin-bottom: 12px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* or specify another color */
+}
+
+.header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+  margin-top: 20px;
+}
+
+.left-links {
+  gap: 10px;
+  display: flex;
+}
+
+.right-links {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content .buttons {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  padding-bottom: 100px;
+  margin-bottom: 20px;
+
+}
+
+.main-content .input {
+  margin-bottom: 10px; /* Adjust as needed */
 }
